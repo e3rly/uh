@@ -5,16 +5,17 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>CG 없는 영화의 미학 — Reality is the New Magic</title>
   <meta name="description" content="실물 효과와 착시로 현실의 감정을 되찾은 영화들: 반지의 제왕, 인셉션, 매드맥스, 오펜하이머 사례로 보는 리얼리즘의 미학" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet">
-  <!-- 캐시 무력화용 v 파라미터 -->
-  <link rel="stylesheet" href="styles.css?v=3" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="https://images.pexels.com/photos/7991380/pexels-photo-7991380.jpeg" />
+  <link rel="stylesheet" href="styles.css?v=5" />
 </head>
 <body>
-  <!-- 헤더 -->
+  <!-- ===== Header ===== -->
   <header class="site-header">
     <a href="#intro" class="brand">Cinematic Realism</a>
-    <nav class="nav">
+    <nav class="nav" aria-label="주요 섹션">
       <a href="#why-real">왜 진짜인가</a>
       <a href="#lotr">반지의 제왕</a>
       <a href="#cases">더 많은 사례</a>
@@ -22,7 +23,7 @@
     </nav>
   </header>
 
-  <!-- HERO -->
+  <!-- ===== Hero Section ===== -->
   <section id="intro" class="hero section" style="--hero:url('https://images.pexels.com/photos/7991380/pexels-photo-7991380.jpeg');">
     <div class="hero__overlay"></div>
     <div class="container hero__content">
@@ -31,44 +32,51 @@
     </div>
   </section>
 
-  <!-- 왜 진짜인가 -->
+  <!-- ===== Section: Why Real ===== -->
   <section id="why-real" class="section section--dark">
     <div class="container grid-2">
       <div class="stack">
+        <p class="eyebrow">Context</p>
         <h2 class="section-title">왜 사람들은 ‘진짜’를 원하는가</h2>
         <p class="body">
-          VFX는 현실을 <em>재현</em>하지만, 실물 효과는 현실을 <em>존재</em>시킨다. 관객의 지각은
-          픽셀의 완벽함보다 <strong>빛의 난반사, 공기의 미세한 입자, 배우가 실제 공간에 남기는 흔적</strong>에
-          감정적으로 반응한다. CG가 과잉되면 ‘언캐니 밸리’가 발생해 감정이입이 끊기고, 카메라가 포착한
-          실제 물리현상은 오히려 상상력을 해방한다.
+          VFX는 현실을 <em>재현</em>하지만, 실물 효과는 현실을 <em>존재</em>시킨다.
+          관객의 지각은 픽셀의 완벽함보다
+          <strong>빛의 난반사, 공기의 미세한 입자, 배우가 실제 공간에 남기는 흔적</strong>에 감정적으로 반응한다.
+          CG의 과잉은 ‘언캐니 밸리’를 만들어 감정 몰입을 방해하고,
+          반대로 카메라가 포착한 실제 물리현상은 상상력을 해방한다.
         </p>
         <p class="body">
-          결국 문제는 기술의 유무가 아니라 <strong>지각의 설득</strong>이다. 실물 효과는 관객의 감각을
-          일차적으로 자극하고, CG는 그 위에 세계를 확장한다. 현대 영화는 이 둘의 균형점을 다시 모색 중이다.
+          결국 문제는 기술의 유무가 아니라 <strong>지각의 설득</strong>이다.
+          실물 효과는 관객의 감각을 일차적으로 자극하고,
+          CG는 그 위에 세계를 확장한다.
+          현대 영화는 이 둘의 균형점을 다시 모색 중이다.
         </p>
       </div>
       <figure class="card photo">
-        <img src="https://images.pexels.com/photos/53265/pexels-photo-53265.jpeg" alt="실제 조명과 그림자가 만드는 표면 질감" />
+        <img
+          src="https://images.pexels.com/photos/53265/pexels-photo-53265.jpeg"
+          alt="실제 조명과 그림자가 만드는 표면 질감"
+          loading="lazy" decoding="async" />
         <figcaption>조명·그림자·입자의 우연성 — 스튜디오가 만들 수 없는 불규칙성이 실재감을 만든다.</figcaption>
       </figure>
     </div>
   </section>
 
-  <!-- 반지의 제왕 -->
+  <!-- ===== Section: LOTR ===== -->
   <section id="lotr" class="section">
     <div class="container">
+      <p class="eyebrow">Technique</p>
       <h2 class="section-title center">반지의 제왕: 착시의 엔지니어링</h2>
       <p class="center body narrow">
         <strong>강제 원근(Forced Perspective)</strong>은 동일 프레임 안에서
         피사체의 <em>거리·각도·비례</em>를 교란해 크기 차가 있는 것처럼 보이게 하는 고전 기법이다.
         세트와 소도구의 치수를 달리 제작하고, 카메라 위치와 배우 동선을 정밀하게 고정해
-        클로즈업부터 와이드까지 <em>연속적으로 속임수</em>가 유지되도록 설계했다.
+        클로즈업부터 와이드까지 <em>연속적인 착시</em>가 유지되도록 설계했다.
       </p>
 
       <div class="grid-2 lotr-diagram">
         <figure class="card photo">
-          <!-- 레포에 images/lotr_set.jpg 업로드 필요 -->
-          <img src="images/lotr_set.jpg" alt="강제 원근을 위한 특수 테이블/세트" />
+          <img src="images/lotr_set.jpg" alt="강제 원근을 위한 특수 테이블/세트" loading="lazy" decoding="async" />
           <figcaption>같은 테이블처럼 보이지만 실제로는 기울기·깊이가 다르다.</figcaption>
         </figure>
 
@@ -76,37 +84,38 @@
           <h3 class="h3">착시가 성립하는 핵심 조건</h3>
           <ul class="list">
             <li><strong>세트 설계:</strong> 테이블·의자·소품의 <em>치수/기울기</em>를 다르게 제작</li>
-            <li><strong>카메라 고정:</strong> <em>렌즈·각도·높이</em>가 미세하게라도 바뀌면 착시가 붕괴</li>
-            <li><strong>동시 이동:</strong> 배우와 카메라를 <em>같은 비율</em>로 이동시켜 프레임 내 비례 유지</li>
-            <li><strong>피사계 심도:</strong> 과도한 얕은 심도는 트릭을 들키게 하므로 심도/조리개 관리</li>
+            <li><strong>카메라 고정:</strong> <em>렌즈·각도·높이</em>가 조금이라도 바뀌면 착시 붕괴</li>
+            <li><strong>동시 이동:</strong> 배우와 카메라를 <em>같은 비율</em>로 이동시켜 비례 유지</li>
+            <li><strong>피사계 심도:</strong> 심도가 너무 얕으면 트릭이 노출되므로 조리개 관리 필요</li>
           </ul>
           <p class="note">
             달리(Dolly): 카메라를 레일 위에 올려 <em>직선 궤도</em>로 부드럽게 이동시키는 장치.
-            이 장면에선 카메라와 배우를 함께 이동시켜 <em>미세한 각도 변화 없이</em> 착시를 유지한다.
+            이 장면에서는 카메라와 배우를 함께 움직여 <em>각도 변화 없이</em> 착시를 유지한다.
           </p>
 
           <div class="tip">아래 사진들로 원근감을 체감해 보세요.</div>
           <div class="demo-wrap">
             <img
               src="https://www.adobe.com/kr/creativecloud/photography/discover/media_1a229e21b6b117035014d7eeea79aab8ba83280c0.png?width=750&format=png&optimize=medium"
-              alt="가까운 피사체" class="demo demo--near">
+              alt="가까운 피사체" class="demo demo--near" loading="lazy" decoding="async">
             <img
               src="https://media.istockphoto.com/id/1213562648/photo/young-travellers-at-uyuni-salt-flats-in-bolivia-south-america-forced-perspective.jpg?s=612x612&w=0&k=20&c=ZqROV1rUcGxfBpjoaA1PtqncIol3WENDw1q4NhzX4wY="
-              alt="멀리 있는 피사체" class="demo demo--far">
+              alt="멀리 있는 피사체" class="demo demo--far" loading="lazy" decoding="async">
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 더 많은 사례 -->
+  <!-- ===== Section: Cases ===== -->
   <section id="cases" class="section section--dark">
     <div class="container">
+      <p class="eyebrow">Examples</p>
       <h2 class="section-title center">실제 효과를 택한 영화들</h2>
 
       <div class="cards">
         <article class="card feature">
-          <img src="https://www.indiewire.com/wp-content/uploads/2015/08/inception.jpg" alt="인셉션 회전 복도 세트" />
+          <img src="https://www.indiewire.com/wp-content/uploads/2015/08/inception.jpg" alt="인셉션 회전 복도 세트" loading="lazy" decoding="async" />
           <div class="feature__content">
             <h3 class="h3">인셉션 — 회전 복도</h3>
             <p class="body">
@@ -118,7 +127,7 @@
         </article>
 
         <article class="card feature">
-          <img src="https://www.hollywoodreporter.com/wp-content/uploads/2016/02/mmfr-trl-87423.jpg" alt="매드맥스 분노의 도로 실물 스턴트" />
+          <img src="https://www.hollywoodreporter.com/wp-content/uploads/2016/02/mmfr-trl-87423.jpg" alt="매드맥스 분노의 도로 실물 스턴트" loading="lazy" decoding="async" />
           <div class="feature__content">
             <h3 class="h3">매드맥스 — 실물 스턴트</h3>
             <p class="body">
@@ -129,7 +138,7 @@
         </article>
 
         <article class="card feature">
-          <img src="https://www.dexerto.com/cdn-image/wp-content/uploads/2023/07/24/oppenheimer-nuke-explosion.jpg?width=1200&quality=60&format=auto" alt="오펜하이머의 실제 효과 실험" />
+          <img src="https://www.dexerto.com/cdn-image/wp-content/uploads/2023/07/24/oppenheimer-nuke-explosion.jpg?width=1200&quality=60&format=auto" alt="오펜하이머의 실제 효과 실험" loading="lazy" decoding="async" />
           <div class="feature__content">
             <h3 class="h3">오펜하이머 — 물리 실험</h3>
             <p class="body">
@@ -142,13 +151,16 @@
     </div>
   </section>
 
-  <!-- 감정의 리얼리즘 -->
+  <!-- ===== Section: Emotion ===== -->
   <section id="emotion" class="section section--edge">
     <div class="container narrow center">
+      <p class="eyebrow">Insight</p>
       <h2 class="section-title">기술이 아닌 감정의 리얼리즘</h2>
       <p class="lead">
-        실물 효과는 관객의 감각을 일차적으로 자극한다. 뇌는 <em>우연·잡음·불완전성</em>을 현실의 지표로 해석한다.
-        그래서 실물의 작은 어긋남이 CG의 완벽함보다 <strong>두려움·경이·긴장</strong>을 더 진하게 만든다.
+        실물 효과는 관객의 감각을 일차적으로 자극한다.
+        뇌는 <em>우연·잡음·불완전성</em>을 현실의 지표로 해석한다.
+        그래서 실물의 작은 어긋남이 CG의 완벽함보다
+        <strong>두려움·경이·긴장</strong>을 더 진하게 만든다.
       </p>
       <blockquote class="quote">
         “Reality is the new special effect.”
@@ -156,6 +168,7 @@
     </div>
   </section>
 
-  <script src="script.js?v=3"></script>
+  <script src="script.js?v=5"></script>
 </body>
 </html>
+

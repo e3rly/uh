@@ -147,9 +147,20 @@ body{
 .note{margin-top:10px; font-size:13px; color:#c9c9c9}
 
 .card--gallery{padding:20px 18px}
-.gallery{display:grid; grid-template-columns:1fr 1fr; gap:10px}
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(2, minmax(0, 1fr));
+  gap:10px;
+}
+
 .gallery img{
-  aspect-ratio:16/10; border-radius:14px; border:1px solid var(--line);
+  width:100%;
+  min-width:0;
+  height:auto;
+  aspect-ratio:16/10;
+  object-fit:cover;
+  border-radius:14px;
+  border:1px solid var(--line);
   box-shadow:0 10px 28px rgba(0,0,0,.5);
 }
 

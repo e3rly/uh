@@ -1,4 +1,13 @@
 :root{
+  --font:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic","맑은 고딕",sans-serif;
+}
+
+html, body, h1, h2, h3, h4, h5, h6,
+p, a, li, blockquote, figcaption,
+.pill, .badge, .sticker, .title--display, .h2, .h3, .subtitle, .body, .note, .caption {
+  font-family: var(--font);
+}
+:root{
   --bg:#0b0b0b;
   --ink:#f8f8f8;
   --muted:#bfbfbf;

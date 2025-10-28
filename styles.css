@@ -18,14 +18,25 @@
   --max:820px;
   --header-h:56px;
 }
+html, body { position: relative; }
+
 body::before{
   content:"";
   position:fixed;
   inset:0;
-  background:url('https://i.pinimg.com/originals/74/e4/0d/74e40d572f2bad7ac249222c09b912a1.png') repeat-x center / contain;
-  opacity:0.08;                
-  transform:translateZ(0);
-  z-index:-1;                   
+  background:url('https://i.pinimg.com/originals/74/e4/0d/74e40d572f2bad7ac249222c09b912a1.png') repeat-x center / 1200px auto;
+  opacity:0.1;
+  pointer-events:none;
+  z-index:0;
+  -webkit-mask-image:linear-gradient(90deg, transparent 0%, black 8%, black 92%, transparent 100%);
+  mask-image:linear-gradient(90deg, transparent 0%, black 8%, black 92%, transparent 100%);
+}
+
+.progress,
+.site-header,
+.band,
+.stack { position:relative; z-index:1; }
+                 
 }
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
